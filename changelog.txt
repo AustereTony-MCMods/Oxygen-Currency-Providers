@@ -1,2 +1,6 @@
+0.8.1b [2019-08-12][GE]
++Installing the adapter on the client is no longer required.
++Balance changes made using Grand Economy commands are now synchronized with Oxygen client widgets.
+
 0.8.0b
 +Initial release.
