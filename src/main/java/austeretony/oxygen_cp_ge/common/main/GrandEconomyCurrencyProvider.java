@@ -4,7 +4,6 @@ import java.util.UUID;
 
 import austeretony.oxygen.common.currency.ICurrencyProvider;
 import the_fireplace.grandeconomy.api.GrandEconomyApi;
-import the_fireplace.grandeconomy.economy.Account;
 
 public class GrandEconomyCurrencyProvider implements ICurrencyProvider {
 
@@ -12,7 +11,7 @@ public class GrandEconomyCurrencyProvider implements ICurrencyProvider {
     public String getName() {
         return "Grand Economy Currency Provider";
     }
-    
+
     @Override
     public long getCurrency(UUID playerUUID) {
         return GrandEconomyApi.getBalance(playerUUID);
@@ -25,7 +24,7 @@ public class GrandEconomyCurrencyProvider implements ICurrencyProvider {
 
     @Override
     public void setCurrency(UUID playerUUID, long value) {
-        Account.get(playerUUID).setBalance(value, false);
+        GrandEconomyApi.setBalance(playerUUID, value, false);
     }
 
     @Override

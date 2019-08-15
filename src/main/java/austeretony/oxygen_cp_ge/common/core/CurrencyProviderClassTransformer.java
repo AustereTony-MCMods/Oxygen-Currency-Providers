@@ -15,8 +15,12 @@ public class CurrencyProviderClassTransformer implements IClassTransformer {
     @Override
     public byte[] transform(String name, String transformedName, byte[] basicClass) {
         switch (transformedName) {    
-        case "the_fireplace.grandeconomy.economy.Account":                    
-            return patch(basicClass, EnumInputClass.GRAND_ECONOMY_ACCOUNT);
+        case "the_fireplace.grandeconomy.econhandlers.ge.Account":                    
+            return patch(basicClass, EnumInputClass.GE_ACCOUNT);
+        case "the_fireplace.grandeconomy.econhandlers.sponge.SpongeEconHandler":                    
+            return patch(basicClass, EnumInputClass.GE_SPONGE_ECON_HANDLER);
+        case "the_fireplace.grandeconomy.econhandlers.ep.EnderPayEconHandler":                    
+            return patch(basicClass, EnumInputClass.GE_ENDER_PAY_ECON_HANDLER);
         }
         return basicClass;
     }
