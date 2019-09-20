@@ -2,8 +2,8 @@
 {
   "modid": "oxygen_cp_ge",
   "name": "Oxygen: Grand Economy CP",
-  "description": "Currency providers of popular economy mods for Oxygen.",
-  "version": "0.8.2",
+  "description": "Currency provider for Grand Economy.",
+  "version": "0.9.0",
   "mcversion": "1.12.2",
   "url": "https://minecraft.curseforge.com/projects/oxygen-currency-provider",
   "updateUrl": "",

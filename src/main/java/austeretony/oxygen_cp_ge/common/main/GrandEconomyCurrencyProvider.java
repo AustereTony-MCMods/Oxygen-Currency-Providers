@@ -2,10 +2,10 @@ package austeretony.oxygen_cp_ge.common.main;
 
 import java.util.UUID;
 
-import austeretony.oxygen.common.currency.ICurrencyProvider;
+import austeretony.oxygen_core.common.currency.CurrencyProvider;
 import the_fireplace.grandeconomy.api.GrandEconomyApi;
 
-public class GrandEconomyCurrencyProvider implements ICurrencyProvider {
+public class GrandEconomyCurrencyProvider implements CurrencyProvider {
 
     @Override
     public String getName() {
@@ -38,7 +38,5 @@ public class GrandEconomyCurrencyProvider implements ICurrencyProvider {
     }
 
     @Override
-    public void save(UUID playerUUID) {
-        //unused
-    }
+    public void save(UUID playerUUID) {}
 }
