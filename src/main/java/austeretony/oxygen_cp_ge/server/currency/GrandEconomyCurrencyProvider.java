@@ -2,14 +2,25 @@ package austeretony.oxygen_cp_ge.server.currency;
 
 import java.util.UUID;
 
-import austeretony.oxygen_core.common.currency.CurrencyProvider;
+import austeretony.oxygen_core.server.currency.CurrencyProvider;
+import austeretony.oxygen_cp_ge.common.config.CurrencyProviderConfig;
 import the_fireplace.grandeconomy.api.GrandEconomyApi;
 
 public class GrandEconomyCurrencyProvider implements CurrencyProvider {
 
     @Override
-    public String getName() {
-        return "Grand Economy Currency Provider";
+    public String getDisplayName(){
+        return "Grand Economy Currency";
+    }
+
+    @Override
+    public int getIndex() {
+        return CurrencyProviderConfig.PROVIDER_INDEX.asInt();
+    }
+
+    @Override
+    public boolean forceSync() {
+        return CurrencyProviderConfig.FORCE_BALANCE_SYNC.asBoolean();
     }
 
     @Override
@@ -18,25 +29,10 @@ public class GrandEconomyCurrencyProvider implements CurrencyProvider {
     }
 
     @Override
-    public boolean enoughCurrency(UUID playerUUID, long required) {
-        return GrandEconomyApi.getBalance(playerUUID, Boolean.valueOf(true)) >= required;
-    }
-
-    @Override
     public void setCurrency(UUID playerUUID, long value) {
         GrandEconomyApi.setBalance(playerUUID, value, Boolean.valueOf(true));
     }
 
     @Override
-    public void addCurrency(UUID playerUUID, long value) {
-        GrandEconomyApi.addToBalance(playerUUID, value, Boolean.valueOf(true));
-    }
-
-    @Override
-    public void removeCurrency(UUID playerUUID, long value) {
-        GrandEconomyApi.takeFromBalance(playerUUID, value, Boolean.valueOf(true));
-    }
-
-    @Override
-    public void save(UUID playerUUID) {}
+    public void updated(UUID playerUUID) {}
 }
