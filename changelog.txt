@@ -1,18 +1,28 @@
+0.10.0b [All] [2020-01-17]
++ Changed the function of providers, now they can be used to add a new virtual currencyor replacing an existing one. Several providers can work simultaneously. Now the provider is required both on the server and on the client.
++ Added support for customizing icons and currency names for client widgets.
++ Added configuration files, they will be added to a separate folder ".minecraft/config/oxygen/currency providers/":
+  Options:
+  Server
+  - "provider_index" - [int] - currency index that the provider will use/replace
+  - "force_balance_sync" - [boolean] - enable forced balance synchronization. Balance will sync with the client 1 time per second.             
+  Use this option if the modification for which the provider is used is used as API for other modifications.
+
 0.9.1b [Grand Economy] [2019-11-29]
-+Code cleanup and improvements.
++ Code cleanup and improvements.
 
 0.9.0b [FSMM] [2019-11-23]
-+Initial release.
++ Initial release.
 
 0.9.0b [Grand Economy] [2019-09-20]
-+Compatibility with Oxygen Core 0.9.
++ Compatibility with Oxygen Core 0.9.
 
 0.8.2b [Grand Economy] [2019-08-15]
-+Support for Grand Economy 1.2.0.
++ Support for Grand Economy 1.2.0.
 
 0.8.1b [Grand Economy] [2019-08-12]
-+Installing the adapter on the client is no longer required.
-+Balance changes made using Grand Economy commands are now synchronized with Oxygen client widgets.
++ Installing the adapter on the client is no longer required.
++ Balance changes made using Grand Economy commands are now synchronized with Oxygen client widgets.
 
 0.8.0b [Grand Economy]
-+Initial release.
++ Initial release.
