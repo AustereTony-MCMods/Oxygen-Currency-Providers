@@ -16,7 +16,7 @@ import net.minecraftforge.fml.relauncher.Side;
         modid = CurrencyProviderMain.MODID, 
         name = CurrencyProviderMain.NAME, 
         version = CurrencyProviderMain.VERSION,
-        dependencies = "required-after:oxygen_core@[0.10.2,);required-after:ftbmoney@[1.1.0.42,);",
+        dependencies = "required-after:oxygen_core@[0.11.0,);required-after:ftbmoney@[1.1.0.42,);",
         certificateFingerprint = "@FINGERPRINT@",
         updateJSON = CurrencyProviderMain.VERSIONS_FORGE_URL)
 public class CurrencyProviderMain {
@@ -24,7 +24,7 @@ public class CurrencyProviderMain {
     public static final String 
     MODID = "oxygen_cp_ftb", 
     NAME = "FTB Money Currency Provider", 
-    VERSION = "0.10.0", 
+    VERSION = "0.11.0", 
     VERSION_CUSTOM = VERSION + ":beta:0",
     GAME_VERSION = "1.12.2",
     VERSIONS_FORGE_URL = "https://raw.githubusercontent.com/AustereTony-MCMods/Oxygen-Currency-Provider/info/ftb_versions.json";
