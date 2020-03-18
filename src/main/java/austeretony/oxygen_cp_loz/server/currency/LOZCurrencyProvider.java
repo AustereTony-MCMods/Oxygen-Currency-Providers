@@ -12,7 +12,7 @@ public class LOZCurrencyProvider implements CurrencyProvider {
 
     @Override
     public String getDisplayName(){
-        return "LOZ Currency";
+        return "Legend of Zelda Mod Currency";
     }
 
     @Override

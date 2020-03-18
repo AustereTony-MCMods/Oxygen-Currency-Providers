@@ -16,7 +16,7 @@ import net.minecraftforge.fml.relauncher.Side;
         modid = CurrencyProviderMain.MODID, 
         name = CurrencyProviderMain.NAME, 
         version = CurrencyProviderMain.VERSION,
-        dependencies = "required-after:oxygen_core@[0.10.0,);required-after:lozmod@[4.0.0-pre7,);",
+        dependencies = "required-after:oxygen_core@[0.11.0,);required-after:lozmod@[4.0.0-pre7,);",
         certificateFingerprint = "@FINGERPRINT@",
         updateJSON = CurrencyProviderMain.VERSIONS_FORGE_URL)
 public class CurrencyProviderMain {
@@ -24,7 +24,7 @@ public class CurrencyProviderMain {
     public static final String 
     MODID = "oxygen_cp_loz", 
     NAME = "LOZ Currency Provider", 
-    VERSION = "0.10.0", 
+    VERSION = "0.11.0", 
     VERSION_CUSTOM = VERSION + ":beta:0",
     GAME_VERSION = "1.12.2",
     VERSIONS_FORGE_URL = "https://raw.githubusercontent.com/AustereTony-MCMods/Oxygen-Currency-Provider/info/loz_versions.json";

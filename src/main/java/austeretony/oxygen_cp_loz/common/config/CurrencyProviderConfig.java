@@ -20,6 +20,11 @@ public class CurrencyProviderConfig extends AbstractConfig {
     }
 
     @Override
+    public String getVersion() {
+        return CurrencyProviderMain.VERSION_CUSTOM;
+    }
+
+    @Override
     public String getExternalPath() {
         return CommonReference.getGameFolder() + "/config/oxygen/currency providers/loz.json";
     }
