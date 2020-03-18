@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
-version = "1.12.2-0.10.0"
+version = "1.12.2-0.11.0"
 group = "austeretony.oxygen_cp_ge" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "oxygen-cp-grand-economy"
 
@@ -74,11 +74,4 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
-}
-
-jar {
-   manifest {
-       attributes 'FMLCorePlugin': 'austeretony.oxygen_cp_ge.common.core.CurrencyProviderCorePlugin'
-       attributes 'FMLCorePluginContainsFMLMod': 'true'
-   }
 }

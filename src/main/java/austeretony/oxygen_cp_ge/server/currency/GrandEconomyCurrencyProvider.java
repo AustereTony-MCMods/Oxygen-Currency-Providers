@@ -25,12 +25,12 @@ public class GrandEconomyCurrencyProvider implements CurrencyProvider {
 
     @Override
     public long getCurrency(UUID playerUUID) {
-        return GrandEconomyApi.getBalance(playerUUID, Boolean.valueOf(true));
+        return GrandEconomyApi.getBalance(playerUUID, true);
     }
 
     @Override
     public void setCurrency(UUID playerUUID, long value) {
-        GrandEconomyApi.setBalance(playerUUID, value, Boolean.valueOf(true));
+        GrandEconomyApi.setBalance(playerUUID, value, true);
     }
 
     @Override
