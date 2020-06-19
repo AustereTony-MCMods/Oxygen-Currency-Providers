@@ -10,6 +10,6 @@ public class CurrencyProviderEventsServer {
     @SubscribeEvent
     public void onBalanceUpdated(BalanceChangeEvent event) {
         if (OxygenHelperServer.isPlayerOnline(event.getAccountId()))
-            OxygenHelperServer.setWatchedValueLong(event.getAccountId(), CurrencyProviderConfig.PROVIDER_INDEX.asInt(), event.getNewBalance());
+            OxygenHelperServer.setWatchedValueLong(event.getAccountId(), CurrencyProviderConfig.PROVIDER_INDEX.asInt(), (long) event.getNewBalance());
     }
 }

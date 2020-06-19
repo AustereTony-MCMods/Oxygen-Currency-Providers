@@ -10,7 +10,8 @@ public class GrandEconomyCurrencyProvider implements CurrencyProvider {
 
     @Override
     public String getDisplayName(){
-        return "Grand Economy Currency";
+        return String.format("Grand Economy Currency (%s)", 
+                GrandEconomyApi.getEconomyModId());
     }
 
     @Override
@@ -25,7 +26,7 @@ public class GrandEconomyCurrencyProvider implements CurrencyProvider {
 
     @Override
     public long getCurrency(UUID playerUUID) {
-        return GrandEconomyApi.getBalance(playerUUID, true);
+        return (long) GrandEconomyApi.getBalance(playerUUID, true);
     }
 
     @Override
