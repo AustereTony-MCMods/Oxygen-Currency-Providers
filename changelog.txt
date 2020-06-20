@@ -1,3 +1,9 @@
+0.11.1b [Grand Economy] [2020-06-19]
++ Compatibility with Grand Economy 2.0.0
+
+0.11.1b [FSMM] [2020-05-20]
++ Fixed crash on non-player FSMM account balance update.
+
 0.10.0b [All] [2020-01-17]
 + Changed the function of providers, now they can be used to add a new virtual currencyor replacing an existing one. Several providers can work simultaneously. Now the provider is required both on the server and on the client.
 + Added support for customizing icons and currency names for client widgets.
